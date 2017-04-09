@@ -1,0 +1,31 @@
+<!--
+  Generated template for the ChildActsList page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Child se Related Acts ki List</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="background">
+<ion-searchbar (ionInput)="getItems($event)"
+showCancelButton="true"
+placeholder="filter acts"
+(ionCancel)="onCancelSearch($event)"
+padding-top
+ ></ion-searchbar>
+  <ion-list padding-top>
+  <div *ngFor="let acts of response" >
+  <button ion-item detail-push (click)="displayActDetails(acts)" class="transparentBackground">
+    {{ acts.title }}
+  </button>  
+  </div>
+</ion-list>
+
+</ion-content>

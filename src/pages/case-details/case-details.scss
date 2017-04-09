@@ -1,0 +1,85 @@
+page-case-details {
+    ion-content.animatedGradientBackground{
+        background: gray;
+        background: linear-gradient(43deg, #d46308, #160863, #eeff00, #ff0000);
+        background-size: 800% 800%;
+
+        -webkit-animation: colorFlow 11s ease infinite;
+        -moz-animation: colorFlow 11s ease infinite;
+        -o-animation: colorFlow 11s ease infinite;
+        animation: colorFlow 11s ease infinite;
+    }
+    ion-content.animatedGradientBackground.bgnight,ion-content.animatedGradientBackground .bgnight{
+        background: linear-gradient(29deg, #2c2f2e, #111212, #434545);
+background-size: 600% 600%;
+
+-webkit-animation: NightGradient 30s ease infinite;
+-moz-animation: NightGradient 30s ease infinite;
+-o-animation: NightGradient 30s ease infinite;
+animation: NightGradient 30s ease infinite;
+    }
+    @-webkit-keyframes NightGradient {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@-moz-keyframes NightGradient {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@-o-keyframes NightGradient {
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+@keyframes NightGradient { 
+    0%{background-position:0% 97%}
+    50%{background-position:100% 4%}
+    100%{background-position:0% 97%}
+}
+    *.bAndW{
+    background: black !important; 
+    color: white !important;
+}
+*.bAndWText{
+    color: white !important;
+    background: black;
+}
+    h1.caseHeading{
+        text-shadow: 1px 2px #bcbcbc;
+        color: white;
+        text-align: center;
+    }
+    p.text-justify{
+        text-align: justify;
+        text-justify: newspaper;
+    }
+    ion-card-header h2{
+        text-decoration: underline;
+    }
+    //  Generated Using https://www.gradient-animator.com
+@-webkit-keyframes colorFlow {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+@-moz-keyframes colorFlow {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+@-o-keyframes colorFlow {
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+@keyframes colorFlow { 
+    0%{background-position:0% 92%}
+    50%{background-position:100% 9%}
+    100%{background-position:0% 92%}
+}
+// end of generated gradient animation * 
+
+
+}

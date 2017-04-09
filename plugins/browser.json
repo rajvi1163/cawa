@@ -1,0 +1,39 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionicframework.childacts657548"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionicframework.childacts657548"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionicframework.childacts657548"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionicframework.childacts657548"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionicframework.childacts657548"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionicframework.childacts657548"
+        },
+        "cordova-plugin-tts": {
+            "PACKAGE_NAME": "com.ionicframework.childacts657548"
+        },
+        "cordova-plugin-email": {
+            "PACKAGE_NAME": "com.ionicframework.childacts657548"
+        },
+        "cordova-plugin-x-socialsharing": {
+            "PACKAGE_NAME": "com.ionicframework.childacts657548"
+        }
+    },
+    "dependent_plugins": {}
+}

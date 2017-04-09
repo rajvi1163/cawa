@@ -1,0 +1,15 @@
+page-news-page {
+     ion-content.background{
+        background: gray;
+        background: gray;
+        background: dimgray url('../assets/img/indian-girl.jpg') no-repeat center center;
+        -webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+        background-size: cover;
+    }
+    
+    button.transparentBackground{
+        background: rgba(255,255,255,0.6);
+    }
+}

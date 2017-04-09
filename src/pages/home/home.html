@@ -1,0 +1,169 @@
+<img class="bg" src="../assets/img/emaze.jpg">
+<ion-header class="customBackground">
+  <ion-navbar class="customBackground">
+    <ion-buttons end>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    </ion-buttons>
+    <ion-title>
+      Butterflies and Unicorn
+    </ion-title>
+    <ion-buttons start *ngIf="isHomePage">
+    <button end ion-button (click)="toggleMenuView()"><img ion-avatar src="../assets/img/icons/swipeIcon.png" *ngIf="showGridMenu" height="16px" width="16px"><img src="../assets/img/icons/grid-icon.jpg" *ngIf="!showGridMenu" height="16px" width="16px"></button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="background">
+ <ion-grid bottom *ngIf="showGridMenu">
+   <ion-row center align-items-center>
+     <ion-col>
+       <button ion-button full large [navPush]="childActsList" class="round floating">Child Acts</button>
+       </ion-col>
+       <ion-col >
+       <button ion-button full large [navPush]="caseStudiesList" class="round floating">Case Studies</button>
+       </ion-col>
+       <ion-col >
+       <button ion-button full large [navPush]="stakeholdersList" class="round floating">StakeHolders</button>
+       </ion-col>
+   </ion-row>
+
+
+   <ion-row center align-items-center>
+     
+       <ion-col >
+       <button ion-button full large [navPush]='quizHome' class="round floating">Take Quiz</button>
+       </ion-col>
+        <ion-col >
+       <button ion-button full large [navPush]='newsHome' class="round floating">News</button>
+       </ion-col>
+       <ion-col >
+       <button ion-button full large [navPush]='ack' class="round floating">Acknowledgement</button>
+       </ion-col>
+     </ion-row> 
+
+
+     <ion-row center align-items-center>
+       <ion-col >
+       <button push-md-4 ion-button full large [navPush]='AboutVisionArrayPage' class="round floating">About Visionarray</button>
+       </ion-col>
+        <ion-col >
+       <button ion-button full large [navPush]='abtncpcr' class="round floating">About NCPCR</button>
+       </ion-col>
+
+     </ion-row> 
+ </ion-grid>
+ <!-- GridView END -->
+ <ion-slides *ngIf="!showGridMenu">
+  <ion-slide>
+    <!--<ion-grid>
+      <ion-row align-items-center>
+        <ion-col col-md-4>-->
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+              </ion-col>
+              <ion-col>
+          <div class="fixedWidth Floating2">
+    <button ion-button round full large [navPush]="childActsList" class="fullpage img1 floating2"><div class="blurredWhiteBackground"></div><div class="transparentTextOnButton"><span>Child Acts</span></div></button>
+    </div>
+              </ion-col>
+
+              <ion-col>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+        <!--</ion-col>
+      </ion-row>
+    </ion-grid>-->
+  </ion-slide>
+  <ion-slide>
+    <ion-grid>
+            <ion-row>
+              <ion-col>
+              </ion-col>
+              <ion-col>
+    <div class="fixedWidth Floating2">
+    <button ion-button round full large [navPush]="caseStudiesList" class="fullpage img2 floating2"><div class="blurredWhiteBackground"></div><div class="transparentTextOnButton"><span>Case Studies</span></div></button>
+    </div>
+    </ion-col>
+
+              <ion-col>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+  </ion-slide>
+  <ion-slide>
+     <ion-grid>
+            <ion-row>
+              <ion-col>
+              </ion-col>
+              <ion-col>
+    <div class="fixedWidth Floating2">
+    <button ion-button round full large [navPush]="stakeholderNGO" class="fullpage img3 floating2"><div class="blurredWhiteBackground"></div><div class="transparentTextOnButton"><span>Stakeholders</span></div></button>
+    </div>
+        </ion-col>
+
+              <ion-col>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+  </ion-slide>
+  <ion-slide>
+      <ion-grid>
+            <ion-row>
+              <ion-col>
+              </ion-col>
+              <ion-col>
+    <div class="fixedWidth Floating2">
+    <button ion-button round full large [navPush]='quizHome' class="fullpage img4 floating2"><div class="blurredWhiteBackground"></div><div class="transparentTextOnButton"><span>Quiz</span></div></button>
+    </div>
+       </ion-col>
+
+              <ion-col>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+  </ion-slide>
+
+  <ion-slide>
+      <ion-grid>
+            <ion-row>
+              <ion-col>
+              </ion-col>
+              <ion-col>
+    <div class="fixedWidth Floating2">
+    <button ion-button round full large [navPush]='newsHome' class="fullpage img5 floating2"><div class="blurredWhiteBackground"></div><div class="transparentTextOnButton"><span>News</span></div></button>
+    </div>
+       </ion-col>
+
+              <ion-col>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+  </ion-slide>
+
+  <ion-slide>
+      <ion-grid>
+            <ion-row>
+              <ion-col>
+              </ion-col>
+              <ion-col>
+    <div class="fixedWidth Floating2">
+    <button ion-button round full large [navPush]='ack' class="fullpage img5 floating2"><div class="blurredWhiteBackground"></div><div class="transparentTextOnButton"><span>Acknowledgement</span></div></button>
+    </div>
+       </ion-col>
+
+              <ion-col>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+  </ion-slide>
+
+
+</ion-slides>
+ <footer class="footer">
+   <p style="color: ivory;">made with <ion-icon name="heart"></ion-icon> by VisionArray</p>
+   </footer>
+ </ion-content>

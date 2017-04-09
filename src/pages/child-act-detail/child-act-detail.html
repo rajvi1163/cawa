@@ -1,0 +1,90 @@
+<!--
+  Generated template for the ChildActDetail page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- myapi key 4c63d3fc727f42118423bcd1e66e2586 -->
+<img class="bg" src="../assets/img/happyshot.jpg" >
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Summarized Details of Child Act</ion-title>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="presentPopover($event)">
+  <ion-icon name="more"></ion-icon>
+</button>
+
+<button ion-button icon-only (click)="toggleFakeNightMode()">
+  <ion-icon name="contrast"></ion-icon>
+</button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="background" [class.bgnight]="isNightMode">
+  <ion-fab left bottom>
+    <button ion-fab color="primary" (click)="readActDescription()"><ion-icon name="volume-mute"></ion-icon></button>
+  </ion-fab>
+  <ion-fab right bottom>
+    <button ion-fab color="light"><ion-icon name="share"></ion-icon></button>
+    <ion-fab-list side="left">
+      <button ion-fab><ion-icon name="logo-facebook"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-twitter"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-vimeo"></ion-icon></button>
+      <button ion-fab><ion-icon name="logo-googleplus"></ion-icon></button>
+    </ion-fab-list>
+  </ion-fab>
+  <div #popoverContent >
+  <div #popoverText></div>
+  </div>
+  <h1 class="actHeading">{{act.title}}</h1>
+  <ion-card >
+
+  <ion-card-header [class.bAndW]="isNightMode">
+    <h2 [class.bAndWText]="isNightMode">Description</h2>
+  </ion-card-header>
+
+  <ion-card-content [class.bAndW]="isNightMode">
+    <p class="text-justify" [class.bAndWText]="isNightMode">{{act.description}}</p>
+  </ion-card-content>
+
+</ion-card>
+
+  <ion-card >
+
+  <ion-card-header [class.bAndW]="isNightMode">
+     <h2 [class.bAndWText]="isNightMode">Punishment</h2>
+  </ion-card-header>
+
+  <ion-card-content [class.bAndW]="isNightMode">
+   
+    <ion-list>
+      <ion-item text-wrap *ngFor="let punish of punishmentsStrings" [class.bAndWText]="isNightMode">
+        <ion-icon name="information-circle"></ion-icon> {{punish}}
+      </ion-item>
+    </ion-list>
+  </ion-card-content>
+
+</ion-card>
+
+  <ion-card >
+
+  <ion-card-header [class.bAndW]="isNightMode">
+  <h2 [class.bAndWText]="isNightMode">References</h2>
+  </ion-card-header>
+
+  <ion-card-content [class.bAndW]="isNightMode">
+    <ion-list no-lines>
+  <ion-item [class.bAndWText]="isNightMode">
+    <ion-icon name="arrow-round-forward" item-left></ion-icon>
+      URL: <a href="{{act.reference}}">{{act.references}}</a>
+  </ion-item>
+</ion-list>
+    
+  </ion-card-content>
+
+</ion-card>
+
+</ion-content>

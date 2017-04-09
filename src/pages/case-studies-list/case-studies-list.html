@@ -1,0 +1,25 @@
+<!--
+  Generated template for the CaseStudiesList page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<img class="bg" src="../assets/img/emaze.jpg">
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Featured Case Studies</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content class="background">
+<ion-list padding-top>
+  <div *ngFor="let case of allCaseStudies" >
+  <button ion-item detail-push (click)="displayCase(case)" class="transparentBackground">
+    {{ case.title }}
+  </button>  
+  </div>
+</ion-list>
+</ion-content>

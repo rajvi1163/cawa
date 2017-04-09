@@ -1,0 +1,71 @@
+<!--
+  Generated template for the QuizPlayer page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Learn Via Quiz</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content no-padding class="quizPlayerBackground">
+  <!-- Real Material -->
+  <!--<div class="questionBlock">-->
+  <h1 class="questionNo">Question No: {{ currentQuestionNumber }}</h1>
+  <h3 class="questiontext">{{currentQuestion.question}}</h3>
+  <ion-grid style="position: relative; top: 30px;">
+    <ion-row>
+      <ion-col>
+        <button #option1 ion-button col-md-6 round full (click)="registerAnswer(currentQuestion.option1,option1,option2,option3,option4)" class="quizOption">{{currentQuestion.option1}}</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button #option2 ion-button col-md-6 round full class="quizOption" (click)="registerAnswer(currentQuestion.option2,option2,option1,option3,option4)">{{currentQuestion.option2}}</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+
+      <ion-col>
+        <button #option3 ion-button col-md-6 round full class="quizOption" (click)="registerAnswer(currentQuestion.option3,option3,option1,option2,option4)">{{currentQuestion.option3}}</button>
+      </ion-col>
+       </ion-row>
+    <ion-row>
+
+      <ion-col>
+        <button #option4 ion-button col-md-6 round full class="quizOption" (click)="registerAnswer(currentQuestion.option4,option4,option1,option2,option3)">{{currentQuestion.option4}}</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <button ion-button round full col-md-4 class="quizSkipQuestionButton" (click)="skipQuestion(option1,option2,option3,option4)" [disabled]="isSkipQuestionButtonDisabled">Skip
+        </button>
+        <button ion-button round full col-md-4 class="quizSkipQuestionButton" (click)="showNextQuestion(option1,option2,option3,option4)" [disabled]="isNextQuestionButtonDisabled">Next
+        </button>
+        
+      </ion-col>
+      <ion-col>
+        <button ion-button round full col-md-4 class="finishQuizButton" (click)="finishGame()">Finish</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <!--</div>-->
+  <!-- Background material -->
+	<div class="cloud x1"></div>
+	<!-- Time for multiple clouds to dance around -->
+	<div class="cloud x2"></div>
+	<div class="cloud x3"></div>
+	<div class="cloud x4"></div>
+	<div class="cloud x5"></div>
+  <div class="cloud x4"></div>
+	<div class="cloud x5"></div>
+  <div class="cloud x3"></div>
+	<div class="cloud x4"></div>
+  
+</ion-content>

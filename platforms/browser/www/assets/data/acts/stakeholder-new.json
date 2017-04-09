@@ -1,0 +1,59 @@
+{
+  "StakeHolder" : [
+    {
+            "id":"1",
+            "name":"SAVE THE CHILDREN",
+            "image":"a1.jpg",
+            "address":"Save the Children, Bal Raksha Bharat 1st & 2nd Floor, Plot No. 91, Sector - 44,Gurgaon (Haryana) - 122003, India",
+            "email":"donorsupport@savethechildren.in",
+            "phone":"Tel: +91 124 4752000, 4752100",
+            "lat":"28.451860",
+            "long":"77.071317"
+    },
+
+	{
+      "id":"2",
+            "name":"Bachpan Bachao Andolan ",
+            "image":"a2.jpg",
+            "address":"Central Office: L- 6, Kalkaji, New Delhi- 110019, India",
+            "email":"info@bba.org.in",
+"Website": "www.bba.org.in"
+,"phone":"+91 11 49211111, 26224899 Fax: +91 11 49211138",
+            "lat":"28.537324",
+            "long":"77.258683"
+    },
+	{
+      "id":"3",
+            "name":"HAQ",
+            "image":"a3.png",
+            "address":"Centre for Child Rights B-1/2, Ground Floor Malviya Nagar, New Delhi-110017",
+            "email":" info@haqcrc.org",
+            "phone":"+91-11-26673599, +91-11-41077977, +91-11-26677412, +91-11-26674688 (Fax)",
+            "lat":"28.536515",
+            "long":"77.217354"
+    },
+	{
+      "id":"4",
+            "name":"National Commission for Protection of Child Rights (NCPCR) ",
+            "image":"a4.jpg",
+            "address":"National Commission for Protection of Child Rights, 5th Floor, Chanderlok Building,36 Janpath, New Delhi-110001",
+            "email":"www.ebaalnidan.nic.in",
+            "phone":"Phone:011-23478200 Fax:011-23724026",
+            "lat":"28.624539",
+            "long":"77.220010"
+    },
+	{
+      "id":"5",
+
+            "name":"CHILD RIGHTS AND YOU",
+            "image":"a5.jpg",
+            "address":"(Mumbai / Pune )CRY – Child Rights and You, 189/A Anand Estate, Sane Guruji Marg, Mumbai – 400 011",
+            "email":" media.queries@crymail.org",
+            "phone":"Tel :+91-11-29534033, 011-29531835,  044-28365545/47/49, Tel :022- 23063647/3651/1740 , 022-23098324/6472/684",
+            "lat":"28.6144",
+            "long":"77.1996"
+    }
+
+  ]
+
+}

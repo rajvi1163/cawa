@@ -1,0 +1,33 @@
+page-news-article {
+    ion-content.animatedGradientBackground{
+        background: linear-gradient(359deg, #16d5a4, #6616d5);
+background-size: 400% 400%;
+
+-webkit-animation: StakeHolder 30s ease infinite;
+-moz-animation: StakeHolder 30s ease infinite;
+-o-animation: StakeHolder 30s ease infinite;
+animation: StakeHolder 30s ease infinite;
+    }
+
+    // generated using https://www.gradient-animator.com
+    @-webkit-keyframes StakeHolder {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@-moz-keyframes StakeHolder {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@-o-keyframes StakeHolder {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@keyframes StakeHolder { 
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+}

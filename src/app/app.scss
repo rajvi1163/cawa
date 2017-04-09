@@ -1,0 +1,171 @@
+// http://ionicframework.com/docs/v2/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+/* ********************************************** */
+ion-header.customBackground,ion-navbar.customBackground,ion-navbar.customBackground.toolbar.toolbar-md,div.toolbar-background.toolbar-background-md{
+background: linear-gradient(270deg, #ee7500, #ff0000);
+background-size: 600% 600%;
+
+-webkit-animation: ion-header-animatied-gradient 11s ease infinite;
+-moz-animation: ion-header-animatied-gradient 11s ease infinite;
+-o-animation: ion-header-animatied-gradient 11s ease infinite;
+animation: ion-header-animatied-gradient 11s ease infinite;
+}
+
+@-webkit-keyframes ion-header-animatied-gradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes ion-header-animatied-gradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-o-keyframes ion-header-animatied-gradient {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes ion-header-animatied-gradient { 
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+ion-title div.toolbar-title.toolbar-title-md{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.floating{
+    float: left;
+    -webkit-animation-name: Floatingx;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -moz-animation-name: Floating;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: ease-in-out;
+    margin-left: 30px;
+    margin-top: 5px;
+
+}
+
+@-webkit-keyframes Floatingx{
+    from {-webkit-transform:translate(0, 0px);}
+    65% {-webkit-transform:translate(0, 15px);}
+    to {-webkit-transform: translate(0, -0px);    }
+}
+
+@-moz-keyframes Floating{
+    from {-moz-transform:translate(0, 0px);}
+    65% {-moz-transform:translate(0, 15px);}
+    to {-moz-transform: translate(0, -0px);}
+}
+
+
+.scaling{
+    float: left;
+    -webkit-animation-name: scalex;
+    -webkit-animation-duration:3s;
+    -webkit-animation-iteration-count:infinite;
+    -webkit-animation-timing-function:ease-in-out;
+    -moz-animation-name: scale;
+    -moz-animation-duration:3s;
+    -moz-animation-iteration-count:infinite;
+    -moz-animation-timing-function:ease-in-out;
+}
+
+    @-webkit-keyframes scalex{
+        from {-webkit-transform: scale(0.9);}
+        65% {-webkit-transform: scale(1.0);}
+        to {-webkit-transform: scale(0.9);}
+    }
+
+    @-moz-keyframes scale{
+        from {-moz-transform: scale(0.9);}
+        65% {-moz-transform: scale(1.0);}
+        to {-moz-transform: scale(0.9);}
+    }
+/* http://fiddle.jshell.net/djsbaker/rkzZG/ */
+/* *********************************** 
+*  url: http://www.useragentman.com/blog/2013/03/03/animating-circular-paths-using-css3-transitions/
+*/
+.saturn {
+    
+    /* 
+     * Make the initial position to be the center of the circle you want this
+     * object follow.
+     */
+    position: absolute;
+    left: 315px;
+    top: 143px;
+
+    /*
+     * Sets up the animation duration, timing-function (or easing)
+     * and iteration-count. Ensure you use the appropriate vendor-specific 
+     * prefixes as well as the official syntax for now. Remember, tools like 
+     * CSS Please are your friends!
+     */
+    -webkit-animation: myOrbit 8s linear infinite; /* Chrome, Safari 5 */
+       -moz-animation: myOrbit 8s linear infinite; /* Firefox 5-15 */
+         -o-animation: myOrbit 8s linear infinite; /* Opera 12+ */
+            animation: myOrbit 6s linear infinite; /* Chrome, Firefox 16+, 
+                                                      IE 10+, Safari 5 */
+    
+    
+    
+}
+.saturn:hover{
+    -webkit-animation-play-state: paused;
+    -moz-animation-play-state: paused;
+    -o-animation-play-state: paused;
+    animation-play-state: paused;
+}
+
+/*
+ * Set up the keyframes to actually describe the begining and end states of 
+ * the animation.  The browser will interpolate all the frames between these 
+ * points.  Again, remember your vendor-specific prefixes for now!
+ */
+@-webkit-keyframes myOrbit {
+    0% { -webkit-transform: rotate(0deg) translateX(5px) rotate(0deg); }
+    50%   { -webkit-transform: rotate(60deg) translateX(5px) rotate(-60deg); }
+    
+    100%   { -webkit-transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    0% { -moz-transform: rotate(0deg) translateX(5px) rotate(0deg); }
+    50%   { -moz-transform: rotate(60deg) translateX(5px) rotate(-60deg); }
+   
+    100%   { -moz-transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    0% { -o-transform: rotate(0deg) translateX(5px) rotate(0deg); }
+    50%   { -o-transform: rotate(60deg) translateX(5px) rotate(-60deg); }
+   
+    100%   { -o-transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    0% { transform: rotate(0deg) translateX(5px) rotate(0deg); }
+    50%   { transform: rotate(60deg) translateX(5px) rotate(-60deg); }
+    
+    100%   { transform: rotate(360deg) translateX(5px) rotate(-360deg); }
+}
+// *****************************************

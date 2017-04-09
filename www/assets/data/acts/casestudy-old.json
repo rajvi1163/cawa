@@ -1,0 +1,36 @@
+{
+  "CaseStudy" : [
+    {
+            "id":"1",
+            "name":"This contains title case Study 1",
+            "info":" Lorem ipsum dolor sit amet, tempus pede, nulla accumsan dictum nam ultricies elit nunc. Libero leo id quis commodo, ultricies integer morbi erat donec vehicula. Earum nulla sapien aenean, wisi gravida, mauris sociosqu auctor vitae. Maecenas fusce id nunc risus. Natoque massa gravida wisi, ultricies donec, nulla sollicitudin tristique leo elementum, sed in dui sed imperdiet. Ligula nulla fringilla risus dolor, eu donec convallis duis in nec nibh, ut vitae urna morbi urna, arcu nostra eu in fusce. Imperdiet erat nulla dignissim sagittis sapien ut. Venenatis neque dolor vitae, sollicitudin et ullamcorper sed id etiam ut, vitae libero tortor at, tincidunt per posuere pede ipsum erat elit. Condimentum nec anim. Ac ac nec adipiscing quam et. Penatibus vitae sed vestibulum erat, et nam massa dapibus primis enim eiusmod, pede duis vel tempus turpis nonummy arcu. Quis nec penatibus sodales felis, risus dignissim adipiscing dapibus tincidunt.Mattis blandit in interdum, ut et sed vitae dolor. Montes eget. Vestibulum risus eget mattis, dolor mauris aliquam neque dui turpis orci, sagittis netus primis pede. Potenti in et. Quis convallis eget, gravida tortor sed justo tellus gravida phasellus, urna vulputate, ut eros minus amet quis, neque sem nam."
+
+
+
+
+    },
+    {
+      "id":"2",
+      "name":"This contains title case Study 2",
+      "info":"This contains Information of concerning case Study"
+
+
+    },
+    {
+      "id":"3",
+      "name":"This contains title case Study 3",
+      "info":"This contains Information of concerning case Study"
+
+
+    },
+    {
+
+      "id":"4",
+      "name":"This contains title case Study 4",
+      "info":"This contains Information of concerning case Study"
+
+
+    }
+  ]
+
+}
